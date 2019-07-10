@@ -1,0 +1,16 @@
+<view class='allbody'>
+<view class='selectview'>
+    <view class='selectimg'>
+    <image src='../../image/fdj.png'></image></view>
+    <input bindinput='placename' class='select-input' placeholder='景点名称/部分名称'></input>
+    <button bindtap='selcetbutton' class='selectbutton'>查询</button>
+</view>
+<view class='selectbody' style='min-height:{{allheight*0.65}}px'>
+<view class='toptop'></view>
+<view class='celectplace' wx:for='{{selceview}}'>
+      <view class='selcetwhere'>{{item.place}}</view>
+      <view class='selcetxx'>{{item.view}}</view>
+</view>
+<view class='toptop'></view>  
+</view>
+</view>

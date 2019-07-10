@@ -1,0 +1,73 @@
+<view class='top'>
+  <view class='{{topleft}}' bindtap='diyiye'>旅游圣地
+    <view class='{{dibu}}'></view>
+  </view>
+  <view class='{{topright}}' bindtap='dierye'>智能推荐
+    <view class='{{dibu2}}'></view>
+  </view>
+</view>
+
+<view class='firstpage' wx-if='{{yemaif}}'>
+  <view class='button'>
+    切换城市：
+    <view class='cityname'>
+      <picker mode='selector' bindcancel='pickerquxiao' range='{{list}}' value='{{index}}' bindchange='pikechange'>
+  <view class='city'>{{list[index]}}</view>
+  </picker>
+    </view>
+
+    <view class='blackbox'></view>
+  </view>
+
+  <view class='selectview'>
+    <view class='selectimag'></view>
+    <input class='selectinput' placeholder='景点/门票' bindfocus='getbind' bindblur='lostbind'></input>
+    <button class='selectbutton'>查询</button>
+  </view>
+
+  <swiper autoplay='autoplay' duration='1000' circular='circular' indicator-dots='true'>
+    <swiper-item wx:for='{{dongtaiimag}}'>
+      <view class='miaonew'>{{item.loca}}</view>
+      <image src='../../image/{{nowplace}}/{{item.src}}'></image>
+    </swiper-item>
+  </swiper>
+
+  <view class='jdbox'>
+    <view class='jdboxchild' wx:for='{{imglist1}}'>
+      <image src='../../image/{{nowplace}}/{{item.src}}'></image>
+    </view>
+  </view>
+  <view class='jdwenzibox'>
+    <view class='jdboxwenzi ' wx:for='{{imglist1}}'>
+      {{item.loca}}</view>
+  </view>
+  <view class='jdbox'>
+    <view class='jdboxchild' wx:for='{{imglist2}}'>
+      <image src='../../image/{{nowplace}}/{{item.src}}'></image>
+    </view>
+  </view>
+  <view class='jdwenzibox'>
+    <view class='jdboxwenzi ' wx:for='{{imglist2}}'>
+      {{item.loca}}</view>
+  </view>
+
+  <view class='jieshao' wx:for='{{jjview}}'>
+    <view class='jjbox'>{{item.jjplace}}</view>
+    <view class='xiangxibox' style='height:{{oldheight}}px'>{{item.xxjieshao}}</view>
+    <view class='line'></view>
+  </view>
+  
+  <view class='alldown'>{{nowplace}}人民，欢迎您的到来！
+  </view>
+</view>
+
+
+<view class='pagetwo' wx-if='{{yemaif2}}'>
+  <view class="landscape" wx:for="{{scen}}" bindtap='setup{{item.setup}}'>
+<view class="img">
+<image src="{{item.url}}"></image>
+</view>
+<view class="text">{{item.texth}}</view>
+</view>
+
+</view>

@@ -1,0 +1,84 @@
+/* 详情 */
+.read{
+  width: 340px;
+    height: 500px;
+
+       font-family:sans-serif;
+         margin:5px auto;
+}
+/* 标题 */
+.title{
+  width: 340px;
+  height: 40px;
+
+  font-size: 18px;
+ padding: 8px 0;
+  font-weight:bolder;
+
+}
+.time{
+  width: 340px;
+  height: 20px;
+   font-family:sans-serif;
+  font-size: 16px;
+
+
+  color: rgb(207, 182, 182);
+}
+.read .lang{
+ color: rgb(163, 151, 151);
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  width: 340px;
+  height: 60px;
+line-height: 60px;
+}
+.circle{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 auto;  font-size: 14px;
+   font-weight:bolder;
+   line-height: 30px;
+  box-shadow: 0 0 8px rgb(80, 74, 74); 
+}
+.text-title{
+  padding-top: 15px;
+}
+.text-title view:nth-child(1),
+.text-title view:nth-child(6),
+.text-title view:nth-child(8){
+      font-size: 14px;
+    color: black;
+    font-weight: bolder;
+    font-family: Helvetica, Arial, sans-serif;
+}
+.text-title view:nth-child(2),.text-title view:nth-child(4),
+.text-title view:nth-child(7),.text-title view:nth-child(10),
+.text-title view:nth-child(12)
+{
+      color: #333333;
+    font-family:  Helvetica;
+    font-size:14px;
+    margin-top: 15px;
+}
+.text-title view:nth-child(3){
+ color: #E36C09;
+    font-family:  Helvetica;
+    font-size: 14px;
+    margin-top: 15px;
+}
+.text-title image{
+ width: 340px;
+ height: 180px;
+ margin: 10px auto;
+  border-radius: 3px;
+}
+.banquan{
+   color: rgb(163, 151, 151);
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}

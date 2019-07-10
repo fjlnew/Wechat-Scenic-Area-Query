@@ -1,0 +1,44 @@
+<view class='loginbox'>
+  <view class='login-top'>
+    <view class='{{loginview}}' bindtap='loginview'>
+      登录
+    </view>
+    <view class='{{zhuceview}}' bindtap='zhuceview'>
+      注册
+    </view>
+  </view>
+  <view class='login-button'>
+    <view class='login' wx-if='{{logintf}}'>
+      <view class='wihte'></view>
+      <view class='ziti'>欢迎登录</view>
+      <view class='zhanghao'>
+        <view class='tupiankuang'>
+          <image src='../../image/003.png'></image>
+        </view>
+        <input class='name' placeholder='账号/邮箱/手机号'  bindinput='getloginname'></input>
+      </view>
+      <view class='wihte'></view>
+      <view class='mima'>
+        <view class='tupiankuang'>
+          <image src='../../image/004.png'></image>
+        </view>
+        <input type='{{isloginpassworld}}' class='mimakuang' placeholder='密码' bindinput='getloginpassworld'>
+        </input>
+        <view class='showpassworld' bindtap='showpassworlds'>
+          <image src='{{imagesrc}}'></image>
+        </view>
+      </view>
+      <view class='wihte'></view>
+      <button bindtap='login'>登录</button>
+      <view class='losemima' bindtap='wangjimima'>忘记密码?</view>
+    </view>
+
+    <view class='zhuce' wx-if='{{zhucetf}}'>
+      <view class='wihte'>欢迎您加我们！</view>
+      <input class='name' placeholder='电话号/邮箱' bindinput='getzhucename'></input>
+      <input type='password' class='password' placeholder='密码' bindinput='getzhucepassworld'></input>
+      <input type='password' class='password' placeholder='确认密码' bindinput='getzhucpassworld2'></input>
+      <button bindtap='zhucebutton'>注册</button>
+    </view>
+  </view>
+</view>

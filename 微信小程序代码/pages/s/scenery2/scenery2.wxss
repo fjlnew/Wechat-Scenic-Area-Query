@@ -1,0 +1,94 @@
+/* 详情 */
+.read{
+  width: 340px;
+    height: 500px;
+
+       font-family:sans-serif;
+         margin:5px auto;
+}
+/* 标题 */
+.title{
+  width: 340px;
+  height: 40px;
+
+  font-size: 18px;
+ padding: 8px 0;
+  font-weight:bolder;
+
+}
+.time{
+  width: 340px;
+  height: 20px;
+   font-family:sans-serif;
+  font-size: 16px;
+
+
+  color: rgb(207, 182, 182);
+}
+.read .lang{
+ color: rgb(163, 151, 151);
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+  width: 340px;
+  height: 60px;
+line-height: 60px;
+}
+.circle{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 auto;  font-size: 14px;
+   font-weight:bolder;
+   line-height: 30px;
+  box-shadow: 0 0 8px rgb(80, 74, 74); 
+}
+.text-title image{
+ width: 340px;
+ height: 180px;
+ margin: 10px auto;
+ border-radius: 3px;
+}
+.text-title{
+  padding-top: 15px;
+}
+.text-title view:nth-child(1){
+      color: #00B0F0;
+          font-size: 14px;
+          font-family: Helvetica, Arial, sans-serif;
+}
+.text-title view:nth-child(2),
+.text-title view:nth-child(4),
+.text-title view:nth-child(7),
+.text-title view:nth-child(12),
+.text-title view:nth-child(13),
+.text-title view:nth-child(14),
+.text-title view:nth-child(16),
+.text-title view:nth-child(18),
+.text-title view:nth-child(20),
+.text-title view:nth-child(22),
+.text-title text:not(.blue-text){
+         color: #333333;
+          font-size: 14px;
+          font-family: Helvetica, Arial, sans-serif;
+}
+.text-title view:nth-child(6){
+   color: #333333;
+          font-size: 15px;
+          font-weight: 600px;
+          margin:5px auto;
+          text-align: center;
+          font-family: Helvetica, Arial, sans-serif;
+}
+.text-title>.blue-text{
+      color: #00B0F0;
+        font-size: 14px;
+          font-family: Helvetica, Arial, sans-serif;
+}
+.banquan{
+   color: rgb(163, 151, 151);
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
